@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{27874238-3472-4106-A263-2674FF4B6EF5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RCMS</RootNamespace>
+    <AssemblyName>RCMS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_Collector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Collector.Designer.cs">
+      <DependentUpon>Admin_Collector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_CollectorateStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_CollectorateStaff.Designer.cs">
+      <DependentUpon>Admin_CollectorateStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Home.Designer.cs">
+      <DependentUpon>Admin_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Items.Designer.cs">
+      <DependentUpon>Admin_Items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseConnection.cs" />
+    <Compile Include="BasePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasePage.Designer.cs">
+      <DependentUpon>BasePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Collector_Camp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Collector_Camp.Designer.cs">
+      <DependentUpon>Collector_Camp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Collector_CollectionCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Collector_CollectionCenter.Designer.cs">
+      <DependentUpon>Collector_CollectionCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Collector_CollectorateStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Collector_CollectorateStaff.Designer.cs">
+      <DependentUpon>Collector_CollectorateStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Collector_HandleRequests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Collector_HandleRequests.Designer.cs">
+      <DependentUpon>Collector_HandleRequests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Collector_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Collector_Home.Designer.cs">
+      <DependentUpon>Collector_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Collector_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Collector_Stock.Designer.cs">
+      <DependentUpon>Collector_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Staff_AddStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_AddStock.Designer.cs">
+      <DependentUpon>Staff_AddStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_CampMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_CampMembers.Designer.cs">
+      <DependentUpon>Staff_CampMembers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_Home.Designer.cs">
+      <DependentUpon>Staff_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_OrderItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_OrderItems.Designer.cs">
+      <DependentUpon>Staff_OrderItems.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_Collector.resx">
+      <DependentUpon>Admin_Collector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_CollectorateStaff.resx">
+      <DependentUpon>Admin_CollectorateStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Home.resx">
+      <DependentUpon>Admin_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Items.resx">
+      <DependentUpon>Admin_Items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasePage.resx">
+      <DependentUpon>BasePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collector_Camp.resx">
+      <DependentUpon>Collector_Camp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collector_CollectionCenter.resx">
+      <DependentUpon>Collector_CollectionCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collector_CollectorateStaff.resx">
+      <DependentUpon>Collector_CollectorateStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collector_HandleRequests.resx">
+      <DependentUpon>Collector_HandleRequests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collector_Home.resx">
+      <DependentUpon>Collector_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collector_Stock.resx">
+      <DependentUpon>Collector_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Staff_AddStock.resx">
+      <DependentUpon>Staff_AddStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_CampMembers.resx">
+      <DependentUpon>Staff_CampMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_Home.resx">
+      <DependentUpon>Staff_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_OrderItems.resx">
+      <DependentUpon>Staff_OrderItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bungalow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\truck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g1_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOFOR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\India-For-Kerala-Final-CC.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.door.lock.open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\who-we-are.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
